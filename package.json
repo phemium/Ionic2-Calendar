@@ -1,6 +1,6 @@
 {
     "name": "@phemium-costaisa/ionic2-calendar",
-    "version": "0.6.10",
+    "version": "0.6.11",
     "description": "Ionic2 calendar component",
     "keywords": [
         "Ionic2",
@@ -19,7 +19,7 @@
         "build.ng": "ng-packagr -p package.json",
         "build.es2015": "node_modules/.bin/ngc -p tsconfig.json",
         "dev": "tsc --watch",
-        "postinstall": "ngcc"
+        "publish": "npm run build && cd dist && npm publish --access public"
     },
     "main": "./index.js",
     "dependencies": {},
